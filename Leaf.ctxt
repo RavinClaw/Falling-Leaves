@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Leaf
+comment1.params=
+comment1.target=void\ act()
+comment2.params=
+comment2.target=void\ Movement()
+comment3.params=
+comment3.target=void\ onCollision()
+comment4.params=direction
+comment4.target=void\ changeDirection(int)
+numComments=5

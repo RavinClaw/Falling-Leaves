@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=AutumnWorld
+comment1.params=
+comment1.target=AutumnWorld()
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ act\ -\ things\ you\ want\ to\ do\ each\ time\ around\ go\ in\ here\r\n\ \r\n
+comment3.params=
+comment3.target=void\ spawnNewLeaf()
+comment4.params=
+comment4.target=void\ prepare()
+comment4.text=\r\n\ Prepare\ the\ world\ for\ the\ start\ of\ the\ program.\r\n\ That\ is\:\ create\ the\ initial\ objects\ and\ add\ them\ to\ the\ world.\r\n
+numComments=5

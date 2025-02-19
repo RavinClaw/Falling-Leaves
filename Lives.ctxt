@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Lives
+comment1.params=
+comment1.target=Lives()
+comment2.params=
+comment2.target=void\ act()
+comment3.params=points
+comment3.target=void\ changeLives(int)
+comment4.params=points
+comment4.target=void\ addLives(int)
+comment5.params=
+comment5.target=void\ reset()
+numComments=6
