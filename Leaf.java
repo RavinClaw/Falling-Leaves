@@ -4,8 +4,31 @@ public class Leaf  extends Actor
 {
     private GreenfootSound soundeffect = new GreenfootSound("leafcollect.mp3");
     private GreenfootSound soundeffect2 = new GreenfootSound("leafdie.mp3");
+    
+    private GreenfootImage leaf1 = new GreenfootImage("cutoutleaf0.png");
+    private GreenfootImage leaf2 = new GreenfootImage("cutoutleaf1.png");
+    private GreenfootImage leaf3 = new GreenfootImage("cutoutleaf2.png");
+    private GreenfootImage leaf4 = new GreenfootImage("cutoutleaf3.png");
+    
     private int speed = Greenfoot.getRandomNumber(2) + 1;
+    private int leaf_image = Greenfoot.getRandomNumber(4);
 
+    public Leaf()
+    {
+        if (leaf_image == 0) {
+            setImage(leaf1);
+        }
+        else if (leaf_image == 1) {
+            setImage(leaf2);
+        }
+        else if (leaf_image == 2) {
+            setImage(leaf3);
+        }
+        else if (leaf_image == 3) {
+            setImage(leaf4);
+        }
+    }
+    
     public void act()
     {
         Movement();

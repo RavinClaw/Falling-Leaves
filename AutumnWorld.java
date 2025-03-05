@@ -5,6 +5,7 @@ public class AutumnWorld  extends World
     private static int spawnCooldown = 1000;
     private static long lastSpawnTime = System.currentTimeMillis();
     private static GreenfootSound soundeffect = new GreenfootSound("pumpkinspawn.mp3");
+    private static Boolean has_speedpotion_spawned = false;
 
     public AutumnWorld()
     {    
@@ -19,11 +20,8 @@ public class AutumnWorld  extends World
         lives.reset();
     }
 
-    /**
-     * act - things you want to do each time around go in here
-     * 
-     */
-    public void act() {
+    public void act()
+    {
         spawnNewLeaf();
     }
     
@@ -36,6 +34,10 @@ public class AutumnWorld  extends World
         
         if (elapsedTime >= spawnCooldown)
         {
+            if (random_chance == 56 && has_speedpotion_spawned == false) {
+                addObject(new SpeedPotion(), Greenfoot.getRandomNumber(getWidth()), 0);
+                has_speedpotion_spawned = true;
+            }
             if (random_chance == 58 || random_chance == 78 || random_chance == 12 || random_chance == 33 || random_chance == 46) {
                 soundeffect.play();
                 addObject(new Pumpkin(), Greenfoot.getRandomNumber(getWidth()), 0);

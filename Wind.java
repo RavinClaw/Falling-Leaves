@@ -55,5 +55,18 @@ public class Wind extends Actor
                 pumpkin.turn(random_direction - 1);
             }
         }
+        
+        List<SpeedPotion> speedpotions = getWorld().getObjects(SpeedPotion.class);
+        for (SpeedPotion speedpotion : speedpotions)
+        {
+            if (random_direction == 1) {
+                speedpotion.changeDirection(-random_direction);
+                speedpotion.turn(-random_direction);
+            }
+            else {
+                speedpotion.changeDirection(random_direction - 1);
+                speedpotion.turn(random_direction - 1);
+            }
+        }
     }
 }
